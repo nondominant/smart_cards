@@ -43,3 +43,42 @@ The Java applet on an EMV payment card runs in a secure execution environment ca
 Yes, there are open source implementations of JCVM available. One example is the GlobalPlatform-compliant open source implementation of JCVM called GlobalPlatform Pro
 
 One example of an open-source firmware image for smart cards is the Java Card OpenPlatform (JCOP) firmware
+
+## Micro controller specifications
+
+    NXP SmartMX:
+
+    RAM: 16KB - 80KB
+    Flash memory: 80KB - 160KB
+    EEPROM: 2KB - 8KB
+    Non-volatile memory: 128KB - 320KB
+
+    STMicroelectronics ST31/33:
+
+    RAM: 8KB - 48KB
+    Flash memory: 48KB - 256KB
+    EEPROM: 2KB - 16KB
+    Non-volatile memory: 128KB - 256KB
+
+    Infineon SLE 77:
+
+    RAM: 6KB - 40KB
+    Flash memory: 48KB - 160KB
+    EEPROM: 1KB - 8KB
+    Non-volatile memory: 64KB - 320KB
+
+    Atmel AT90SC:
+
+    RAM: 1KB - 8KB
+    Flash memory: 16KB - 64KB
+    EEPROM: 1KB - 4KB
+    Non-volatile memory: 16KB - 64KB
+
+
+## Rust crates 
+
+One example of a Rust HAL for Cortex-M processors is the cortex-m crate, which provides low-level access to the processor's registers and peripherals, and includes support for interrupt handling, atomic operations, and memory barriers. This crate can be used as a building block to create higher-level abstractions and drivers for specific devices, such as the NXP SmartMX chip.
+
+Additionally, there are other Rust crates available that provide higher-level abstractions and drivers specifically for the NXP SmartMX chip, such as the nxp-smartmx crate. This crate provides an API for interacting with the SmartMX chip's hardware features, such as the cryptographic coprocessor and secure memory, and includes examples and documentation for getting started with the chip in Rust.
+
+Overall, there are several options available for using Rust with the NXP SmartMX chip, including the cortex-m crate as a low-level building block and the nxp-smartmx crate for higher-level abstractions and drivers.
